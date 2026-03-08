@@ -1,80 +1,135 @@
-<x-layouts.app>
-    <section 
-        x-data="{ activeSlide: 2, activeTab: 'Games' }" 
-        class="relative min-h-screen bg-black text-white overflow-hidden font-sans border border-purple-900/30"
-    >
-        <div class="absolute top-1/3 -left-32 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-700/20 rounded-full blur-[120px] pointer-events-none"></div>
+<x-layouts.app title="Home - Spwn">
+    
+    <div class="fixed top-0 right-0 w-[800px] h-[800px] bg-indigo-900/10 rounded-full blur-[150px] pointer-events-none mix-blend-screen -z-10"></div>
+    <div class="fixed bottom-0 left-0 w-[600px] h-[600px] bg-purple-900/10 rounded-full blur-[150px] pointer-events-none mix-blend-screen -z-10"></div>
 
-        <div class="grid grid-cols-[100px_1fr] md:grid-cols-[140px_1fr] h-screen">
-            
-            <aside class="border-r border-indigo-500/30 flex flex-col justify-between items-center py-8 relative z-10 bg-black/40 backdrop-blur-sm">
-                <div class="w-12 h-12 text-cyan-400 flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                    </svg>
-                </div>
+    <div class="w-full relative z-10 pb-24">
+        
+        <main class="max-w-7xl mx-auto px-6 pt-8 space-y-16">
 
-                <div class="flex flex-col gap-4">
-                    <template x-for="i in 4">
-                        <button 
-                            @click="activeSlide = i"
-                            class="w-3 h-3 rounded-sm transition-all duration-300"
-                            :class="activeSlide === i ? 'bg-indigo-500 ring-2 ring-indigo-500/50 ring-offset-2 ring-offset-black' : 'bg-indigo-900/50 hover:bg-indigo-500/80'"
-                        ></button>
-                    </template>
-                </div>
-            </aside>
-
-            <main class="flex flex-col relative z-10">
+            <section class="relative h-[65vh] min-h-[500px] w-full rounded-2xl overflow-hidden border border-white/10 group cursor-pointer shadow-2xl">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg" alt="The Witcher 3" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105">
                 
-                <nav class="border-b border-indigo-500/30 h-24 flex justify-center items-center gap-16 bg-black/20 backdrop-blur-sm">
-                    <template x-for="tab in ['Discover', 'Games', 'Community']">
-                        <button 
-                            @click="activeTab = tab"
-                            class="text-sm tracking-widest uppercase font-medium transition-colors relative pb-2"
-                            :class="activeTab === tab ? 'text-indigo-400' : 'text-gray-400 hover:text-gray-200'"
-                        >
-                            <span x-text="tab"></span>
-                            <div 
-                                x-show="activeTab === tab"
-                                x-transition
-                                class="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-500"
-                            ></div>
-                        </button>
-                    </template>
-                </nav>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/60 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#05050A]/90 via-[#05050A]/40 to-transparent"></div>
 
-                <div class="flex-1 relative flex items-center justify-between p-12 lg:p-24">
+                <div class="absolute bottom-0 left-0 p-10 lg:p-16 w-full lg:w-2/3">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-indigo-600 text-white">Featured</span>
+                        <span class="text-slate-300 text-sm font-medium">RPG • Action</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 tracking-tight leading-tight drop-shadow-lg">
+                        The Witcher 3: Wild Hunt
+                    </h1>
+                    <p class="text-slate-300 text-sm md:text-base line-clamp-2 max-w-xl mb-8">
+                        As Geralt of Rivia, a monster slayer for hire, you must track down the Child of Prophecy in a vast, war-torn landscape.
+                    </p>
+                    <a href="/details" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-black text-sm font-bold tracking-wide hover:bg-slate-200 transition-colors gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        View Game Details
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-end justify-between mb-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-wide border-l-4 border-[#00A3FF] pl-3">Trending This Week</h2>
+                        <p class="text-slate-400 text-sm mt-1 pl-4">The most anticipated and played games right now.</p>
+                    </div>
+                    <a href="/discover" class="text-[#00A3FF] text-sm font-bold hover:text-white transition-colors uppercase tracking-wider">See all</a>
+                </div>
+
+                <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;">
                     
-                    <div class="max-w-2xl">
-                        </div>
-
-                    <div class="flex flex-col items-end gap-6">
-                        <template x-for="i in 3">
-                            <div class="flex items-center gap-4 group cursor-pointer" @click="activeSlide = i">
-                                <span 
-                                    class="text-sm font-mono tracking-widest transition-colors"
-                                    :class="activeSlide === i ? 'text-indigo-400' : 'text-gray-600 group-hover:text-gray-400'"
-                                    x-text="`0${i}`"
-                                ></span>
-                                <div 
-                                    class="h-px transition-all duration-300"
-                                    :class="activeSlide === i ? 'w-12 bg-indigo-500' : 'w-0 bg-transparent group-hover:w-6 group-hover:bg-gray-600'"
-                                ></div>
+                    <div class="w-48 shrink-0 snap-start group">
+                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5">
+                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1qkx.jpg" alt="DMC 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
                             </div>
-                        </template>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
+                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            9.2
+                        </div>
+                        <h3 class="font-bold text-white text-base leading-tight hover:underline cursor-pointer">Devil May Cry 5</h3>
+                        <button class="w-full mt-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-[#00A3FF] text-xs font-bold transition-colors">
+                            + Add to Backlog
+                        </button>
+                    </div>
+
+                    <div class="w-48 shrink-0 snap-start group">
+                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5">
+                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2mvt.jpg" alt="Cyberpunk 2077" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
+                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            8.8
+                        </div>
+                        <h3 class="font-bold text-white text-base leading-tight hover:underline cursor-pointer">Cyberpunk 2077</h3>
+                        <button class="w-full mt-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-[#00A3FF] text-xs font-bold transition-colors">
+                            + Add to Backlog
+                        </button>
+                    </div>
+
+                    <div class="w-48 shrink-0 snap-start group">
+                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5">
+                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg" alt="Elden Ring" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
+                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            9.9
+                        </div>
+                        <h3 class="font-bold text-white text-base leading-tight hover:underline cursor-pointer">Elden Ring</h3>
+                        <button class="w-full mt-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-[#00A3FF] text-xs font-bold transition-colors">
+                            + Add to Backlog
+                        </button>
+                    </div>
+
+                    <div class="w-48 shrink-0 snap-start group">
+                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5">
+                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co22l7.jpg" alt="Ghost of Tsushima" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
+                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            9.4
+                        </div>
+                        <h3 class="font-bold text-white text-base leading-tight hover:underline cursor-pointer">Ghost of Tsushima</h3>
+                        <button class="w-full mt-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-[#00A3FF] text-xs font-bold transition-colors">
+                            + Add to Backlog
+                        </button>
+                    </div>
+                    
+                    <div class="w-48 shrink-0 snap-start group">
+                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5">
+                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co670h.jpg" alt="Baldur's Gate 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
+                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            9.7
+                        </div>
+                        <h3 class="font-bold text-white text-base leading-tight hover:underline cursor-pointer">Baldur's Gate 3</h3>
+                        <button class="w-full mt-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-[#00A3FF] text-xs font-bold transition-colors">
+                            + Add to Backlog
+                        </button>
                     </div>
 
                 </div>
+            </section>
 
-                <button class="absolute bottom-12 right-12 lg:bottom-24 lg:right-24 w-16 h-16 rounded-full border-2 border-indigo-500/50 flex items-center justify-center text-indigo-400 hover:bg-indigo-500 hover:text-white hover:border-indigo-500 transition-all duration-300 group shadow-[0_0_30px_rgba(99,102,241,0.2)] hover:shadow-[0_0_40px_rgba(99,102,241,0.5)]">
-                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 ml-1 group-hover:scale-110 transition-transform">
-                        <path d="M8 5v14l11-7z" />
-                    </svg>
-                </button>
-
-            </main>
-        </div>
-    </section>
+        </main>
+    </div>
 </x-layouts.app>
