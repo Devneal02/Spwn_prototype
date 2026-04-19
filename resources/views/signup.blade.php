@@ -31,8 +31,8 @@
                         I agree to the <a href="#" class="text-[#00A3FF] hover:text-white transition-colors">Terms of Service</a> and <a href="#" class="text-[#00A3FF] hover:text-white transition-colors">Privacy Policy</a>.
                     </span>
                 </div>
-
-                <button type="button" class="w-full bg-[#00A3FF] hover:bg-[#33b5ff] text-[#05050A] font-bold py-3.5 rounded-xl transition-colors shadow-[0_0_20px_rgba(0,163,255,0.3)] mt-2">
+                
+                <button type="button" onclick="localStorage.setItem('isLoggedIn', 'true'); window.location.href='/'" class="w-full bg-[#00A3FF] hover:bg-[#33b5ff] text-[#05050A] font-bold py-3.5 rounded-xl transition-colors shadow-[0_0_20px_rgba(0,163,255,0.3)] mt-2">
                     Create Account
                 </button>
             </form>

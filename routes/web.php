@@ -23,4 +23,5 @@ Route::get('/discover', function () { return view('discover'); });
 Route::get('/backlog', function () { return view('backlog'); });
 Route::get('/community', function () {  return view('community'); });
 Route::get('/games', function () {  return view('games'); });
+Route::get('/profile', function () {  return view('profile'); });
 
