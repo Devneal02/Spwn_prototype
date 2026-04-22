@@ -8,7 +8,7 @@
       RIGHT — trending sidebar + active polls + top contributors + live activity
     Features:
       • Stories / Now Playing strip
-      • Tab-filtered feed (All · Reviews · Discussion · Clips · Help)
+      • Tab-filtered feed (All · Reviews · Discussion · recommendations · Help)
       • Post cards with like/comment/bookmark/share interactions (Alpine)
       • Community polls with live vote bars
       • Achievement badges on user cards
@@ -18,7 +18,7 @@
 <div
     x-data="{
         activeTab: 'all',
-        tabs: ['all','reviews','discussion','clips','help'],
+        tabs: ['all','reviews','discussion','recommendations','help'],
         posts: [
             {
                 id:1, user:'VergilFan99', avatar:'V', color:'from-rose-600 to-red-800',
@@ -80,40 +80,18 @@
         toggleSave(post) { post.saved = !post.saved; post.saves += post.saved ? 1 : -1; },
         formatNum(n) { return n >= 1000 ? (n/1000).toFixed(1) + 'k' : n; }
     }"
-    class="min-h-screen bg-[#05050A] text-white"
+    class="relative min-h-screen overflow-hidden bg-[#05050A] text-white"
 >
 
     {{-- Ambient glow --}}
-    <div class="fixed top-0 left-1/3 w-[700px] h-[500px] bg-[#00A3FF]/[0.05] rounded-full blur-[140px] pointer-events-none -z-10"></div>
-    <div class="fixed bottom-0 right-0 w-[500px] h-[500px] bg-purple-900/[0.05] rounded-full blur-[120px] pointer-events-none -z-10"></div>
+        <div class="fixed top-0 right-0 w-[800px] h-[800px] bg-indigo-900/10 rounded-full blur-[150px] pointer-events-none mix-blend-screen -z-10"></div>
+        <div class="fixed bottom-0 left-0 w-[600px] h-[600px] bg-purple-900/10 rounded-full blur-[150px] pointer-events-none mix-blend-screen -z-10"></div>
 
     <div class="max-w-[1400px] mx-auto px-4 lg:px-8 py-8">
 
-        {{-- ░░░ TOP STATS BAR ░░░ --}}
-        <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/[0.06]">
-            <div>
-                <h1 class="text-2xl font-black text-white tracking-tight">Community</h1>
-            </div>
-            <div class="hidden md:flex items-center gap-6 text-center">
-                @foreach(['48.2k' => 'Members', '1.3k' => 'Online Now', '892' => 'Posts Today', '4.1k' => 'Reviews'] as $val => $label)
-                <div>
-                    <div class="text-lg font-black text-white">{{ $val }}</div>
-                    <div class="text-[10px] uppercase tracking-widest text-slate-600 font-bold">{{ $label }}</div>
-                </div>
-                @endforeach
-            </div>
-            <button class="flex items-center gap-2 bg-[#00A3FF] hover:bg-[#33b5ff] text-[#05050A] font-black text-sm px-5 py-2.5 rounded-xl transition-all shadow-[0_0_20px_rgba(0,163,255,0.25)]">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
-                New Post
-            </button>
-        </div>
-
         {{-- ░░░ THREE COLUMN LAYOUT ░░░ --}}
         <div class="grid grid-cols-1 lg:grid-cols-[240px_1fr_300px] gap-6">
-
-            {{-- ╔══════════════════╗ --}}
-            {{-- ║   LEFT SIDEBAR   ║ --}}
-            {{-- ╚══════════════════╝ --}}
+            
             <aside class="hidden lg:flex flex-col gap-4">
 
                 {{-- User card --}}
@@ -141,39 +119,6 @@
                                 <div class="text-[9px] text-slate-600 uppercase tracking-widest">Likes</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                {{-- Nav links --}}
-                <nav class="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-3 space-y-1">
-                    @foreach([
-                        ['🏠','Feed',true],
-                        ['🔥','Trending',false],
-                        ['⭐','Reviews',false],
-                        ['🎮','Game Talk',false],
-                        ['🏆','Leaderboard',false],
-                        ['🔖','Saved',false],
-                        ['📅','Events',false],
-                    ] as [$icon,$label,$active])
-                    <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-bold transition-all {{ $active ? 'bg-[#00A3FF]/10 text-[#00A3FF]' : 'text-slate-400 hover:text-white hover:bg-white/5' }}">
-                        <span>{{ $icon }}</span> {{ $label }}
-                    </a>
-                    @endforeach
-                </nav>
-
-                {{-- My badges --}}
-                <div class="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-4">
-                    <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-3">My Badges</p>
-                    <div class="grid grid-cols-3 gap-2">
-                        @foreach([
-                            ['🎖️','Explorer'],['📝','Writer'],['❤️','Supporter'],
-                            ['🌟','Top Fan'],['🕹️','OG Gamer'],['🔥','Hot Take'],
-                        ] as [$ico,$name])
-                        <div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-white/[0.03] border border-white/[0.05] hover:border-white/10 transition-all cursor-pointer" title="{{ $name }}">
-                            <span class="text-lg">{{ $ico }}</span>
-                            <span class="text-[9px] text-slate-600 text-center leading-tight">{{ $name }}</span>
-                        </div>
-                        @endforeach
                     </div>
                 </div>
 
@@ -212,7 +157,7 @@
                     <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width:none">
                         {{-- Add your story --}}
                         <div class="shrink-0 flex flex-col items-center gap-2 cursor-pointer group">
-                            <div class="w-14 h-14 rounded-2xl bg-white/[0.04] border-2 border-dashed border-white/20 flex items-center justify-center text-slate-400 group-hover:border-[#00A3FF]/50 group-hover:text-[#00A3FF] transition-all">
+                            <div class="w-20 h-20 rounded-2xl bg-white/[0.04] border-2 border-dashed border-white/20 flex items-center justify-center text-slate-400 group-hover:border-[#00A3FF]/50 group-hover:text-[#00A3FF] transition-all">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
                             </div>
                             <span class="text-[10px] text-slate-500 font-bold text-center leading-tight">Add</span>
@@ -225,11 +170,12 @@
                             ['L','LoreHunter','Witcher 3','from-cyan-600 to-sky-800','https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg', false],
                             ['K','Kairos_VII','Elden Ring','from-violet-600 to-purple-800','https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg', true],
                             ['S','StellarRey','Hades','from-orange-600 to-amber-800','https://images.igdb.com/igdb/image/upload/t_cover_big/co22l7.jpg', false],
+                            ['S','Quagmire','Hades','from-blue-600 to-amber-800','https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/library_600x900.jpg', false],
                         ]; @endphp
 
                         @foreach($stories as [$init,$uname,$game,$grad,$img,$live])
                         <div class="shrink-0 flex flex-col items-center gap-2 cursor-pointer group">
-                            <div class="relative w-14 h-14 rounded-2xl overflow-hidden border-2 {{ $live ? 'border-[#00A3FF]' : 'border-white/10' }} transition-all group-hover:border-white/40">
+                            <div class="relative w-20 h-20 rounded-2xl overflow-hidden border-2 {{ $live ? 'border-[#00A3FF]' : 'border-white/10' }} transition-all group-hover:border-white/40">
                                 <img src="{{ $img }}" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div class="absolute bottom-0.5 left-0 right-0 flex justify-center">
@@ -277,7 +223,7 @@
 
                 {{-- Feed tabs --}}
                 <div class="flex items-center gap-1 bg-white/[0.02] border border-white/[0.06] rounded-xl p-1">
-                    @foreach(['all'=>'All','reviews'=>'Reviews','discussion'=>'Discussion','clips'=>'Clips','help'=>'Help & Tips'] as $key=>$label)
+                    @foreach(['all'=>'All','reviews'=>'Reviews','discussion'=>'Discussions','recommendations'=>'Recommendations','help'=>'Help & Tips'] as $key=>$label)
                     <button
                         @click="activeTab = '{{ $key }}'"
                         :class="activeTab === '{{ $key }}' ? 'bg-white/10 text-white' : 'text-slate-500 hover:text-slate-300'"
@@ -302,12 +248,10 @@
                                             <div class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-green-400 rounded-full border-2 border-[#05050A]"></div>
                                         </div>
                                         <div>
-                                            <div class="flex items-center gap-2">
+                                            <div>
                                                 <p class="text-sm font-black text-white" x-text="post.user"></p>
-                                                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/[0.05] border border-white/[0.07]"
-                                                      :class="post.badgeColor" x-text="post.badge"></span>
+                                                <p class="text-[11px] text-slate-600 mt-0.5" x-text="post.time"></p>
                                             </div>
-                                            <p class="text-[11px] text-slate-600 mt-0.5" x-text="post.time"></p>
                                         </div>
                                     </div>
                                     <div class="flex items-center gap-2">
@@ -321,19 +265,8 @@
                                     </div>
                                 </div>
 
-                                {{-- Rating stars if review --}}
-                                <template x-if="post.rating">
-                                    <div class="flex items-center gap-1 mb-2">
-                                        <span class="bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-black px-2.5 py-0.5 rounded-lg" x-text="post.rating + '/10'"></span>
-                                        <div class="flex gap-0.5 ml-1">
-                                            <template x-for="i in 10">
-                                                <div class="h-1.5 w-3 rounded-full" :class="i <= post.rating ? 'bg-green-400' : 'bg-white/10'"></div>
-                                            </template>
-                                        </div>
-                                    </div>
-                                </template>
-
                                 {{-- Post content --}}
+
                                 <h3 class="text-base font-black text-white mb-2 leading-snug group-hover:text-[#00A3FF] transition-colors" x-text="post.title"></h3>
                                 <p class="text-sm text-slate-400 leading-relaxed line-clamp-3" x-text="post.body"></p>
 
@@ -382,7 +315,6 @@
 
                     {{-- Empty state --}}
                     <div x-show="filteredPosts.length === 0" class="text-center py-16 rounded-2xl border border-white/[0.06] bg-white/[0.01]">
-                        <p class="text-4xl mb-3">🎮</p>
                         <p class="text-white font-bold">No posts yet</p>
                         <p class="text-slate-500 text-sm mt-1">Be the first to post in this category.</p>
                     </div>
@@ -407,37 +339,6 @@
                         <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0z"/></svg>
                     </div>
 
-                    {{-- Community Poll --}}
-                    <div x-data="{
-                        voted: null,
-                        votes: [412, 287, 156, 89],
-                        get total() { return this.votes.reduce((a,b)=>a+b,0); },
-                        vote(i) { if(!this.voted) { this.voted=i; this.votes[i]++; } },
-                        pct(i) { return Math.round(this.votes[i]/this.total*100); }
-                    }" class="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5">
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-2 h-2 bg-[#00A3FF] rounded-full animate-pulse"></div>
-                            <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">Community Poll</p>
-                        </div>
-                        <p class="text-sm font-black text-white mb-4 leading-snug">What's the greatest open world game ever made?</p>
-                        <div class="space-y-2">
-                            @foreach(['The Witcher 3','Elden Ring','Red Dead 2','Skyrim'] as $idx => $opt)
-                            <button @click="vote({{ $idx }})"
-                                    :disabled="voted !== null"
-                                    class="relative w-full text-left rounded-xl overflow-hidden border transition-all"
-                                    :class="voted === {{ $idx }} ? 'border-[#00A3FF]/50' : 'border-white/[0.07] hover:border-white/20'">
-                                <div class="absolute inset-0 bg-white/[0.04] rounded-xl transition-all duration-700"
-                                     :style="voted !== null ? 'width:' + pct({{ $idx }}) + '%' : 'width:0%'"
-                                     :class="voted === {{ $idx }} ? 'bg-[#00A3FF]/20' : 'bg-white/[0.04]'"></div>
-                                <div class="relative flex items-center justify-between px-3 py-2.5">
-                                    <span class="text-xs font-bold" :class="voted === {{ $idx }} ? 'text-[#00A3FF]' : 'text-slate-300'">{{ $opt }}</span>
-                                    <span x-show="voted !== null" class="text-xs font-black text-slate-400" x-text="pct({{ $idx }}) + '%'"></span>
-                                </div>
-                            </button>
-                            @endforeach
-                        </div>
-                        <p class="text-[10px] text-slate-600 mt-3 text-right" x-text="total.toLocaleString() + ' votes'"></p>
-                    </div>
 
                     {{-- Trending games --}}
                     <div class="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5">
@@ -466,12 +367,12 @@
 
                     {{-- Top Contributors --}}
                     <div class="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5">
-                        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-4">🏆 Top This Week</p>
+                        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-4">Top Contributors</p>
                         <div class="space-y-3">
                             @foreach([
-                                ['RPG_Master','142 posts','from-indigo-600 to-violet-700','R','text-yellow-400','👑'],
-                                ['LoreHunter','98 posts','from-cyan-600 to-sky-700','L','text-slate-400','🥈'],
-                                ['AlexGamer99','76 posts','from-rose-600 to-red-700','A','text-amber-600','🥉'],
+                                ['RPG_Master','142 posts','from-indigo-600 to-violet-700','R','text-yellow-400',''],
+                                ['LoreHunter','98 posts','from-cyan-600 to-sky-700','L','text-slate-400',''],
+                                ['AlexGamer99','76 posts','from-rose-600 to-red-700','A','text-amber-600',''],
                                 ['PixelWitch','61 posts','from-pink-600 to-rose-700','P','text-slate-500',''],
                                 ['voidrunner','54 posts','from-slate-600 to-gray-700','V','text-slate-500',''],
                             ] as [$name,$posts,$grad,$init,$rankColor,$medal])

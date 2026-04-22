@@ -97,7 +97,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Elden Ring</h3>
                             <p class="text-sm text-slate-400 mt-1">FromSoftware</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.9</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Cyberpunk 2077</h3>
                             <p class="text-sm text-slate-400 mt-1">CD Projekt Red</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">8.8</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -123,7 +123,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Baldur's Gate 3</h3>
                             <p class="text-sm text-slate-400 mt-1">Larian Studios</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.7</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -136,7 +136,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Red Dead 2</h3>
                             <p class="text-sm text-slate-400 mt-1">Rockstar Games</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.9</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -149,7 +149,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Hades</h3>
                             <p class="text-sm text-slate-400 mt-1">Supergiant Games</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.4</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">RE Village</h3>
                             <p class="text-sm text-slate-400 mt-1">Capcom</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.1</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -175,7 +175,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">The Witcher 3</h3>
                             <p class="text-sm text-slate-400 mt-1">CD Projekt Red</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.8</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -188,7 +188,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">DOOM Eternal</h3>
                             <p class="text-sm text-slate-400 mt-1">id Software</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.5</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -201,7 +201,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Civilization VI</h3>
                             <p class="text-sm text-slate-400 mt-1">Firaxis Games</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">8.9</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -214,7 +214,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Hollow Knight</h3>
                             <p class="text-sm text-slate-400 mt-1">Team Cherry</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.6</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -227,7 +227,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Street Fighter 6</h3>
                             <p class="text-sm text-slate-400 mt-1">Capcom</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.2</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -240,7 +240,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Forza Horizon 5</h3>
                             <p class="text-sm text-slate-400 mt-1">Playground Games</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.3</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -253,7 +253,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">EA SPORTS FC 24</h3>
                             <p class="text-sm text-slate-400 mt-1">Electronic Arts</p>
                             <div class="flex items-center gap-1.5 text-amber-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-amber-500/10 rounded-md border border-amber-500/20">7.5</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -266,7 +266,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Final Fantasy XIV</h3>
                             <p class="text-sm text-slate-400 mt-1">Square Enix</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.4</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -279,7 +279,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Flight Simulator</h3>
                             <p class="text-sm text-slate-400 mt-1">Asobo Studio</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">9.0</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 
@@ -292,7 +292,7 @@
                             <h3 class="text-xl font-bold text-white tracking-wide group-hover:text-[#00A3FF] transition-colors truncate">Cities: Skylines</h3>
                             <p class="text-sm text-slate-400 mt-1">Colossal Order</p>
                             <div class="flex items-center gap-1.5 text-green-400 mt-3 mb-4"><span class="px-2.5 py-1 text-sm font-bold bg-green-500/10 rounded-md border border-green-500/20">8.7</span></div>
-                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">Review</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
+                            <div class="grid grid-cols-2 gap-2"><button class="rounded-lg bg-[#00A3FF] text-[#05050A] px-2 py-2.5 text-xs font-bold shadow-[0_0_15px_rgba(0,163,255,0.3)]">View</button><button class="rounded-lg border border-white/10 bg-white/5 text-white px-2 py-2.5 text-xs font-bold hover:bg-white/10">Backlog</button></div>
                         </div>
                     </div>
 

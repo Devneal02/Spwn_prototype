@@ -19,7 +19,7 @@ Route::get('/details', function () {
 // NEW ROUTES:
 Route::get('/login', function () { return view('login'); });
 Route::get('/signup', function () { return view('signup'); });
-Route::get('/discover', function () { return view('discover'); });
+Route::get('/charts', function () { return view('charts'); });
 Route::get('/backlog', function () { return view('backlog'); });
 Route::get('/community', function () {  return view('community'); });
 Route::get('/games', function () {  return view('games'); });

@@ -14,7 +14,7 @@
             <form class="space-y-5">
                 <div>
                     <label class="block text-xs font-bold tracking-widest uppercase text-slate-500 mb-2">Email Address</label>
-                    <input type="email" value="gamer@example.com" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00A3FF] transition-colors">
+                    <input type="email" value="Nelann@example.com" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00A3FF] transition-colors">
                 </div>
                 <div>
                     <label class="block text-xs font-bold tracking-widest uppercase text-slate-500 mb-2">Password</label>

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Spwn - Where games are discovered' }}</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
+    <link rel="shortcut icon" href="{{ asset('images/logo.png') }}">
     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
@@ -21,8 +24,8 @@
 
             <div class="hidden md:flex items-center gap-6 text-sm font-bold uppercase tracking-wider text-slate-400">
                 <a href="/" class="hover:text-white transition-colors">Home</a>
-                <a href="/discover" class="hover:text-white transition-colors">Discover</a>
                 <a href="/games" class="hover:text-white transition-colors">Games</a>
+                <a href="/charts" class="hover:text-white transition-colors">Charts</a>
                 <a href="/community" class="hover:text-white transition-colors">Community</a>
                 <a href="/backlog" class="text-[#00A3FF] hover:text-white transition-colors">Backlog</a>
             </div>
@@ -74,7 +77,7 @@
                         <span>S<span class="text-[#00A3FF]">PW</span>N</span>
                     </a>
                     <p class="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
-                        The ultimate database and community for gamers. Discover your next favorite game, log your backlog, and share your experiences.
+                        The ultimate database and community for gamers. Discover your next favorite game and share your experiences.
                     </p>
                     <div class="flex items-center gap-4">
                         <button class="w-10 h-10 rounded-full bg-white/5 hover:bg-[#00A3FF] text-white hover:text-[#05050A] flex items-center justify-center transition-colors">

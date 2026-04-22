@@ -7,128 +7,306 @@
         
         <main class="max-w-7xl mx-auto px-6 pt-8 space-y-16">
 
-            <section class="relative h-[65vh] min-h-[500px] w-full rounded-2xl overflow-hidden border border-white/10 group cursor-pointer shadow-2xl">
-                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg" alt="The Witcher 3" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105">
+        <section>
+            <div class="relative w-full rounded-2xl overflow-hidden border border-[#00A3FF]/30 bg-[#00A3FF]/5 shadow-[0_0_30px_rgba(0,163,255,0.1)] group">
+                <div class="absolute inset-0 bg-[url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_hero.jpg')] bg-cover bg-center opacity-30 mix-blend-luminosity"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#05050A] via-[#05050A]/80 to-transparent"></div>
                 
-                <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/60 to-transparent"></div>
-                <div class="absolute inset-0 bg-gradient-to-r from-[#05050A]/90 via-[#05050A]/40 to-transparent"></div>
-
-                <div class="absolute bottom-0 left-0 p-10 lg:p-16 w-full lg:w-2/3">
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-[#00A3FF] text-[#05050A]">Featured</span>
-                        <span class="text-slate-300 text-sm font-medium">RPG • Action</span>
+                <div class="relative z-10 p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="max-w-xl text-center md:text-left">
+                        <span class="text-[#00A3FF] text-xs font-bold uppercase tracking-widest mb-2 block">Just Released</span>
+                        <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-4">Red Dead Redemption 2</h2>
+                        <p class="text-slate-300 leading-relaxed">Arthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive.</p>
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 tracking-tight leading-tight drop-shadow-lg">
-                        The Witcher 3: Wild Hunt
-                    </h1>
-                    <p class="text-slate-300 text-sm md:text-base line-clamp-2 max-w-xl mb-8">
-                        As Geralt of Rivia, a monster slayer for hire, you must track down the Child of Prophecy in a vast, war-torn landscape.
-                    </p>
-                    <a href="/details" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-black text-sm font-bold tracking-wide hover:bg-slate-200 transition-colors gap-2">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-                        View Game Details
+                    <a href="/details" class="shrink-0 rounded-xl bg-[#00A3FF] hover:bg-[#33b5ff] px-8 py-4 text-sm font-bold tracking-wide text-[#05050A] transition-all shadow-[0_0_20px_rgba(0,163,255,0.3)]">
+                        View
                     </a>
                 </div>
-            </section>
+            </div>
+        </section>
+        
+        <section>
+            <div class="flex items-end justify-between mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide border-l-4 border-[#00A3FF] pl-3">Staff Picks</h2>
+                    <p class="text-slate-400 text-sm mt-1 pl-4">Games we literally cannot stop thinking about.</p>
+                </div>
+            </div>
 
-            <section>
-                <div class="flex items-end justify-between mb-6">
-                    <div>
-                        <h2 class="text-2xl font-bold text-white tracking-wide border-l-4 border-[#00A3FF] pl-3">Trending This Week</h2>
-                        <p class="text-slate-400 text-sm mt-1 pl-4">The most anticipated and played games right now.</p>
-                    </div>
-                    <a href="/discover" class="text-[#00A3FF] text-sm font-bold hover:text-white transition-colors uppercase tracking-wider">See all</a>
+            <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;">
+                
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-[#00A3FF] text-[#05050A]">Must Play</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">RPG</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-[#00A3FF] transition-colors">Baldur's Gate 3</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">"The closest a video game has ever come to replicating the freedom of tabletop D&D."</p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;">
-                    
-                    <div class="w-48 shrink-0 snap-start group">
-                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5 shadow-lg">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1qkx.jpg" alt="DMC 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-indigo-600 text-white">Action Roguelike</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Indie</span>
                             </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-indigo-400 transition-colors">Hades</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">"Flawless combat loop tied together with an incredible narrative that rewards dying."</p>
                         </div>
-                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
-                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            9.2
-                        </div>
-                        <h3 class="font-bold text-white text-base leading-tight hover:text-[#00A3FF] cursor-pointer transition-colors">Devil May Cry 5</h3>
-                        <button class="w-full mt-3 py-2 rounded-lg bg-[#00A3FF]/10 hover:bg-[#00A3FF]/20 border border-[#00A3FF]/30 text-[#00A3FF] text-xs font-bold transition-colors">
-                            + Add to Backlog
-                        </button>
-                    </div>
-
-                    <div class="w-48 shrink-0 snap-start group">
-                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5 shadow-lg">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg" alt="Elden Ring" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
-                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            9.9
-                        </div>
-                        <h3 class="font-bold text-white text-base leading-tight hover:text-[#00A3FF] cursor-pointer transition-colors">Elden Ring</h3>
-                        <button class="w-full mt-3 py-2 rounded-lg bg-[#00A3FF]/10 hover:bg-[#00A3FF]/20 border border-[#00A3FF]/30 text-[#00A3FF] text-xs font-bold transition-colors">
-                            + Add to Backlog
-                        </button>
-                    </div>
-
-                    <div class="w-48 shrink-0 snap-start group">
-                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5 shadow-lg">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2mvt.jpg" alt="Cyberpunk 2077" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
-                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            8.8
-                        </div>
-                        <h3 class="font-bold text-white text-base leading-tight hover:text-[#00A3FF] cursor-pointer transition-colors">Cyberpunk 2077</h3>
-                        <button class="w-full mt-3 py-2 rounded-lg bg-[#00A3FF]/10 hover:bg-[#00A3FF]/20 border border-[#00A3FF]/30 text-[#00A3FF] text-xs font-bold transition-colors">
-                            + Add to Backlog
-                        </button>
-                    </div>
-
-                    <div class="w-48 shrink-0 snap-start group">
-                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5 shadow-lg">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co670h.jpg" alt="Baldur's Gate 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
-                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            9.7
-                        </div>
-                        <h3 class="font-bold text-white text-base leading-tight hover:text-[#00A3FF] cursor-pointer transition-colors">Baldur's Gate 3</h3>
-                        <button class="w-full mt-3 py-2 rounded-lg bg-[#00A3FF]/10 hover:bg-[#00A3FF]/20 border border-[#00A3FF]/30 text-[#00A3FF] text-xs font-bold transition-colors">
-                            + Add to Backlog
-                        </button>
-                    </div>
-
-                    <div class="w-48 shrink-0 snap-start group">
-                        <div class="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 mb-3 bg-white/5 shadow-lg">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co22l7.jpg" alt="Ghost of Tsushima" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            <div class="absolute top-0 left-0 bg-black/60 backdrop-blur-md p-2 rounded-br-xl text-white/50 hover:text-white hover:bg-black/80 cursor-pointer transition-colors">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-1.5 text-sm font-bold text-slate-300 mb-1">
-                            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            9.4
-                        </div>
-                        <h3 class="font-bold text-white text-base leading-tight hover:text-[#00A3FF] cursor-pointer transition-colors">Ghost of Tsushima</h3>
-                        <button class="w-full mt-3 py-2 rounded-lg bg-[#00A3FF]/10 hover:bg-[#00A3FF]/20 border border-[#00A3FF]/30 text-[#00A3FF] text-xs font-bold transition-colors">
-                            + Add to Backlog
-                        </button>
-                    </div>
-
+                    </a>
                 </div>
-            </section>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-purple-600 text-white">Metroidvania</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Platformer</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-purple-400 transition-colors">Hollow Knight</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">"Beautiful, melancholic, and punishingly difficult in the best way possible."</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-end justify-between mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide border-l-4 border-emerald-500 pl-3">Trending This Month</h2>
+                    <p class="text-slate-400 text-sm mt-1 pl-4">The games everyone is talking about right now.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;">
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2054970/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-emerald-600 text-white">RPG</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Open World</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-emerald-400 transition-colors">Dragon's Dogma 2</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">A narrative driven action-RPG that challenges players to choose their own experience, from the appearance of their Arisen to their vocation.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1778820/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-emerald-600 text-white">Fighting</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Action</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-emerald-400 transition-colors">Tekken 8</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">The legendary fighting franchise returns with next-gen visuals, completely rebuilt character models, and a new aggressive combat system.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-emerald-600 text-white">Survival</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Base Building</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-emerald-400 transition-colors">Palworld</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">Fight, farm, build and work alongside mysterious creatures called "Pals" in this completely new multiplayer, open world survival and crafting game!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-end justify-between mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide border-l-4 border-[#00A3FF] pl-3">Recommended</h2>
+                    <p class="text-slate-400 text-sm mt-1 pl-4">Based on your preferences.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;">
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-[#00A3FF]/20 text-[#00A3FF] border border-[#00A3FF]/30">Action Adventure</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-[#00A3FF] transition-colors">Ghost of Tsushima</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">Forge a new path and wage an unconventional war for the freedom of Tsushima as the Samurai warrior Jin Sakai.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-[#00A3FF]/20 text-[#00A3FF] border border-[#00A3FF]/30">RPG</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-[#00A3FF] transition-colors">Assassin's Creed Valhalla</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">Become Eivor, a legendary Viking raider on a quest for glory. Explore a dynamic and beautiful open world set against the brutal backdrop of England's Dark Ages.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151640/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-[#00A3FF]/20 text-[#00A3FF] border border-[#00A3FF]/30">RPG</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-[#00A3FF] transition-colors">Horizon Zero Dawn</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">Experience Aloy's legendary quest to unravel the mysteries of a future Earth ruled by deadly Machines.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-end justify-between mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide border-l-4 border-rose-500 pl-3">Hidden Gems</h2>
+                    <p class="text-slate-400 text-sm mt-1 pl-4">Incredible games you probably missed.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;">
+                
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-rose-600 text-white">Hack & Slash</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Action</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-rose-400 transition-colors">Devil May Cry 5</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">The ultimate Devil Hunter is back in style, in the game action fans have been waiting for.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1196590/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-rose-600 text-white">Survival Horror</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">FPS</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-rose-400 transition-colors">Resident Evil Village</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">Experience survival horror like never before in the eighth major installment in the storied Resident Evil franchise.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-rose-600 text-white">Sci-Fi</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">RPG</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-rose-400 transition-colors">Cyberpunk 2077</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">An open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-end justify-between mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide border-l-4 border-purple-500 pl-3">The Horizon</h2>
+                    <p class="text-slate-400 text-sm mt-1 pl-4">The most anticipated upcoming releases.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;">
+                
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://images.igdb.com/igdb/image/upload/t_screenshot_huge/scaphe.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-purple-600 text-white">Coming 2025</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Open World</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-purple-400 transition-colors">Grand Theft Auto VI</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">Welcome to Leonida, the home of the neon-soaked streets of Vice City and beyond in the biggest, most immersive evolution of Grand Theft Auto yet.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/library_hero.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-purple-600 text-white">Coming 2025</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">RPG</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-purple-400 transition-colors">Monster Hunter Wilds</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">The next generation of Monster Hunter brings seamlessly interconnected biomes and thrilling new hunts in a living, breathing ecosystem.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-80 md:w-[400px] shrink-0 snap-start group relative rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                    <a href="/details" class="block h-full">
+                        <img src="https://images.igdb.com/igdb/image/upload/t_screenshot_huge/sc11p47.jpg" class="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/80 to-[#05050A]/20"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full flex flex-col justify-end">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-purple-600 text-white">TBA</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded bg-white/10 text-slate-300 border border-white/10">Action Adventure</span>
+                            </div>
+                            <h3 class="font-bold text-white text-xl leading-tight group-hover:text-purple-400 transition-colors">Death Stranding 2</h3>
+                            <p class="text-xs text-slate-300 mt-2 line-clamp-2">Sam Porter Bridges returns to save humanity from extinction in Kojima's latest surreal masterpiece.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
             <section>
                 <div class="flex items-end justify-between mb-6">
