@@ -25,7 +25,7 @@
             <div class="hidden md:flex items-center gap-6 text-sm font-bold uppercase tracking-wider text-slate-400">
                 <a href="/" class="hover:text-white transition-colors">Home</a>
                 <a href="/games" class="hover:text-white transition-colors">Games</a>
-                <a href="/charts" class="hover:text-white transition-colors">Charts</a>
+                <a href="/charts" class="hover:text-white transition-colors">Chart</a>
                 <a href="/community" class="hover:text-white transition-colors">Community</a>
                 <a href="/backlog" class="text-[#00A3FF] hover:text-white transition-colors">Backlog</a>
             </div>

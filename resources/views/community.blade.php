@@ -197,7 +197,7 @@
                         <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#00A3FF] to-purple-600 flex items-center justify-center text-white font-black text-base shrink-0">N</div>
                         <div class="flex-1">
                             <textarea
-                                placeholder="What are you playing? Share an experience, review, or hot take..."
+                                placeholder="What are you playing? Share an experience, review, or recommend..."
                                 class="w-full bg-white/[0.03] border border-white/[0.07] rounded-xl px-4 py-3 text-slate-300 text-sm focus:outline-none focus:border-[#00A3FF]/40 transition-colors resize-none leading-relaxed"
                                 rows="3"></textarea>
                             <div class="flex items-center justify-between mt-3 flex-wrap gap-3">
@@ -257,7 +257,7 @@
                                     <div class="flex items-center gap-2">
                                         {{-- Game tag --}}
                                         <span class="text-[10px] font-black px-3 py-1 rounded-full border"
-                                              :class="post.gameColor" x-text="'🎮 ' + post.game"></span>
+                                              :class="post.gameColor" x-text="' ' + post.game"></span>
                                         {{-- More button --}}
                                         <button class="w-7 h-7 rounded-lg flex items-center justify-center text-slate-600 hover:text-white hover:bg-white/10 transition-all">
                                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
@@ -398,5 +398,4 @@
         </div>
     </div>
 </div>
-
 </x-layouts.app>

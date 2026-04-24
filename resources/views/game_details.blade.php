@@ -56,14 +56,32 @@
 
                 <div class="space-y-10 w-full max-w-4xl">
                     
-                    <div class="border-b border-white/5 pb-8">
-                        <h1 class="text-5xl lg:text-6xl font-black text-white tracking-tight drop-shadow-lg">{{ $game['title'] ?? 'The Witcher 3: Wild Hunt' }}</h1>
-                        <p class="mt-4 text-lg text-slate-400 font-medium tracking-wide flex items-center flex-wrap gap-3">
-                            <span class="px-3 py-1 text-[10px] font-bold tracking-[0.2em] uppercase rounded-full bg-white/5 text-slate-300 border border-white/10 backdrop-blur-md">{{ $game['genre'] ?? 'RPG' }}</span>
-                            <span class="text-slate-600">•</span> 
-                            <span>Released: <span class="text-slate-200">May 19, 2015</span></span>
-                        </p>
+            <!-- RIGHT SIDE -->
+            <div class="space-y-10">
+
+                <!-- Title -->
+                <div>
+                    <h1 class="text-5xl font-black text-white">
+                        {{ $game['title'] ?? 'The Witcher 3: Wild Hunt' }}
+                    </h1>
+
+                    <p class="text-slate-400 mt-2">RPG • Released: May 19, 2015</p>
+
+                    <!-- STORE LINKS -->
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank"
+                           class="px-4 py-2 bg-green-500 text-black rounded-lg font-bold hover:bg-green-400">Steam</a>
+
+                        <a href="https://www.playstation.com/" target="_blank"
+                           class="px-4 py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500">PlayStation</a>
+
+                        <a href="https://www.xbox.com/" target="_blank"
+                           class="px-4 py-2 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-500">Xbox</a>
+
+                        <a href="https://www.gog.com/" target="_blank"
+                           class="px-4 py-2 bg-purple-600 text-white rounded-lg font-bold hover:bg-purple-500">GOG</a>
                     </div>
+                </div>
 
                     <div class="flex items-center gap-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-6 relative overflow-hidden group hover:bg-white/[0.07] transition-colors duration-500">
                         <div class="absolute -right-10 -top-10 w-40 h-40 bg-green-500/10 blur-[40px] rounded-full pointer-events-none transition-all duration-500 group-hover:bg-green-500/20"></div>
@@ -82,16 +100,6 @@
                             <h3 class="mb-3 text-xs font-bold tracking-[0.1em] uppercase text-slate-500">Developer & Publisher</h3>
                             <p class="text-white font-medium text-lg">{{ $game['developer'] ?? 'CD Projekt Red' }}</p>
                         </div>
-                        <div>
-                            <h3 class="mb-3 text-xs font-bold tracking-[0.1em] uppercase text-slate-500">Playable On</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2.5 py-1 text-xs font-bold text-slate-300 bg-black/40 border border-white/10 rounded-md">PC</span>
-                                <span class="px-2.5 py-1 text-xs font-bold text-slate-300 bg-black/40 border border-white/10 rounded-md">PlayStation 5</span>
-                                <span class="px-2.5 py-1 text-xs font-bold text-slate-300 bg-black/40 border border-white/10 rounded-md">PS4</span>
-                                <span class="px-2.5 py-1 text-xs font-bold text-slate-300 bg-black/40 border border-white/10 rounded-md">Xbox Series X/S</span>
-                                <span class="px-2.5 py-1 text-xs font-bold text-slate-300 bg-black/40 border border-white/10 rounded-md">Switch</span>
-                            </div>
-                        </div>
                     </div>
 
                     <div>
@@ -101,13 +109,12 @@
                         </p>
                     </div>
 
+                    <!-- TRAILER -->
                     <div>
-                        <h3 class="mb-4 text-sm font-bold tracking-[0.2em] uppercase text-[#00A3FF] border-l-2 border-[#00A3FF] pl-3">Screenshots</h3>
-                        <div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6khk.jpg" class="h-48 md:h-64 rounded-xl object-cover snap-start border border-white/10 shadow-lg hover:border-[#00A3FF]/50 transition-colors cursor-pointer">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8f0x.jpg" class="h-48 md:h-64 rounded-xl object-cover snap-start border border-white/10 shadow-lg hover:border-[#00A3FF]/50 transition-colors cursor-pointer">
-                            <img src="https://images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8f0y.jpg" class="h-48 md:h-64 rounded-xl object-cover snap-start border border-white/10 shadow-lg hover:border-[#00A3FF]/50 transition-colors cursor-pointer">
-                        </div>
+                        <h3 class="text-sm text-[#00A3FF] font-bold mb-2">Trailer</h3>
+                        <iframe class="w-full aspect-video rounded-xl border border-white/10"
+                            src="https://www.youtube.com/embed/c0i88t0Kacs" allowfullscreen>
+                        </iframe>
                     </div>
 
                     <div class="pt-8">
